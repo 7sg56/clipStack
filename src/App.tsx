@@ -7,6 +7,10 @@ export default function App() {
 
   useEffect(() => {
     chrome.runtime.sendMessage({ type: "GET_ENTRIES" }, (res) => {
+      if (chrome.runtime.lastError) {
+        console.error("ClipStack: Failed to get entries:", chrome.runtime.lastError);
+        return;
+      }
       if (res?.entries) setEntries(res.entries);
     });
   }, []);
@@ -25,6 +29,10 @@ export default function App() {
 
   const remove = (id: string) => {
     chrome.runtime.sendMessage({ type: "REMOVE_ENTRY", id }, () => {
+      if (chrome.runtime.lastError) {
+        console.error("ClipStack: Failed to remove entry:", chrome.runtime.lastError);
+        return;
+      }
       setEntries((prev) => prev.filter((x) => x.id !== id));
     });
   };
@@ -32,6 +40,10 @@ export default function App() {
   const togglePin = (entry: ClipboardEntry) => {
     const updated = { ...entry, pinned: !entry.pinned };
     chrome.runtime.sendMessage({ type: "UPDATE_ENTRY", entry: updated }, () => {
+      if (chrome.runtime.lastError) {
+        console.error("ClipStack: Failed to update entry:", chrome.runtime.lastError);
+        return;
+      }
       setEntries((prev) =>
         prev.map((x) => (x.id === entry.id ? updated : x))
       );

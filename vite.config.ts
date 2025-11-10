@@ -45,6 +45,8 @@ export default defineConfig({
         entryFileNames: "[name].js",
         chunkFileNames: "[name].js",
         assetFileNames: "[name].[ext]",
+        // Ensure no code splitting for extension scripts
+        manualChunks: undefined,
       },
     },
   },
