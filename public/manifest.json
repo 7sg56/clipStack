@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "ClipStack",
+    "version": "1.0.0",
+    "description": "A clipboard manager for your browser",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": ["storage", "scripting", "activeTab"],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
