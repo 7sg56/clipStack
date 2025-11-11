@@ -1,19 +1,16 @@
-# ClipStack 📋
+# ClipStack 
 
 A modern, sleek clipboard manager Chrome extension built with React, TypeScript, and Tailwind CSS. Keep track of everything you copy with a beautiful, intuitive interface.
 
-## ✨ Features
+## Features
 
-- **📋 Automatic Clipboard History** - Automatically captures everything you copy
-- **📌 Pin Important Items** - Pin frequently used clips to keep them at the top
-- **🔍 Smart Search** - Quickly find any copied text with instant search
-- **🌓 Dark/Light Themes** - Toggle between beautiful dark and light modes
-- **💾 Persistent Storage** - All your clipboard history is saved locally
-- **🎨 Sleek UI** - Modern, Vercel-inspired design with smooth animations
-- **⚡ Fast & Lightweight** - Built with Vite for optimal performance
-- **🔒 Privacy First** - All data stored locally, no external servers
+- **Automatic Clipboard History** - Automatically captures everything you copy
+- **Pin Important Items** - Pin frequently used clips to keep them at the top
+- **Smart Search** - Quickly find any copied text with instant search
+- **Dark/Light Themes** - Toggle between beautiful dark and light modes
+- **Persistent Storage** - All your clipboard history is saved locally
 
-## 🚀 Installation
+## Installation
 
 ### From Source
 
@@ -39,7 +36,7 @@ A modern, sleek clipboard manager Chrome extension built with React, TypeScript,
    - Click "Load unpacked"
    - Select the `dist` folder from the project
 
-## 🛠️ Development
+## Development
 
 ### Prerequisites
 
@@ -80,23 +77,8 @@ clipstack/
 └── vite.config.ts       # Vite configuration
 ```
 
-## 🎯 Usage
 
-### Basic Operations
-
-- **Copy Text**: Simply copy any text anywhere - it's automatically saved
-- **View History**: Click the ClipStack icon in your Chrome toolbar
-- **Search**: Type in the search bar to filter your clipboard history
-- **Pin Items**: Click the pin icon to keep important items at the top
-- **Copy from History**: Click the copy icon to copy an item back to clipboard
-- **Delete Items**: Click the delete icon to remove unwanted entries
-- **Toggle Theme**: Click the sun/moon icon to switch between themes
-
-### Keyboard Shortcuts
-
-Currently, the extension uses mouse interactions. Keyboard shortcuts coming soon!
-
-## 🎨 Tech Stack
+## Tech Stack
 
 - **React 19** - UI framework
 - **TypeScript** - Type safety
@@ -105,7 +87,7 @@ Currently, the extension uses mouse interactions. Keyboard shortcuts coming soon
 - **React Icons** - Icon library
 - **Chrome Extension APIs** - Browser integration
 
-## 📝 Configuration
+## Configuration
 
 The extension stores up to **200 clipboard entries** by default. To change this, modify `STORAGE_LIMIT` in `src/storage.ts`:
 
@@ -113,7 +95,7 @@ The extension stores up to **200 clipboard entries** by default. To change this,
 await setEntries(entries.slice(0, 200)); // Change 200 to your desired limit
 ```
 
-## 🔧 Building for Production
+## Building for Production
 
 ```bash
 # Build the extension
@@ -126,21 +108,15 @@ npm run build
 # 3. Submit to Chrome Web Store
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🐛 Known Issues
+## Known Issues
 
 - Content script only captures text from `clipboardData` events (some specialized copy operations may not be captured)
 - Background service worker may need reactivation after Chrome suspends it (automatic)
@@ -148,27 +124,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🗺️ Roadmap
 
 - [ ] Keyboard shortcuts for quick access
-- [ ] Export/Import clipboard history
-- [ ] Categories/Tags for organizing clips
 - [ ] Rich text and image support
-- [ ] Sync across devices (optional cloud sync)
-- [ ] Custom themes
+- [ ] Sync across devices
 - [ ] Clip editing capabilities
-
-## 💡 Inspiration
-
-Inspired by modern clipboard managers and Vercel's design philosophy - clean, fast, and beautiful.
-
-## 🙏 Acknowledgments
-
-- Icons from [React Icons](https://react-icons.github.io/react-icons/)
-- UI inspiration from [Vercel](https://vercel.com)
-- Built with [Vite](https://vitejs.dev/)
-
-## 📧 Contact
-
-If you have any questions or suggestions, feel free to open an issue!
 
 ---
 
-Made with ❤️ using React + TypeScript + Vite
+Made with ❤️ by 7sg56
