@@ -5,8 +5,8 @@ A modern, sleek clipboard manager Chrome extension built with React, TypeScript,
 ## Screenshots
 
 <div align="center">
-  <img src="src/assets/clipStack-dark.png" alt="ClipStack Dark Theme" width="45%" />
-  <img src="src/assets/clipStack-light.png" alt="ClipStack Light Theme" width="45%" />
+  <img src="src/assets/clipStack-dark.png" alt="ClipStack Dark Theme" height="400" />
+  <img src="src/assets/clipStack-light.png" alt="ClipStack Light Theme" height="400" />
   <p><i>Dark Theme (left) and Light Theme (right)</i></p>
 </div>
 
