@@ -1,8 +1,23 @@
 {
-  "name": "clipboard-manager",
+  "name": "clipstack",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A sleek clipboard manager Chrome extension with dark/light themes and pin functionality",
   "type": "module",
+  "author": "7sg56",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7sg56/clipstack"
+  },
+  "keywords": [
+    "clipboard",
+    "manager",
+    "chrome-extension",
+    "react",
+    "typescript",
+    "vite"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
