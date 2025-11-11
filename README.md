@@ -2,8 +2,6 @@
 
 A modern, sleek clipboard manager Chrome extension built with React, TypeScript, and Tailwind CSS. Keep track of everything you copy with a beautiful, intuitive interface.
 
-## Screenshots
-
 <div align="center">
   <img src="src/assets/clipStack-dark.png" alt="ClipStack Dark Theme" height="400" />
   <img src="src/assets/clipStack-light.png" alt="ClipStack Light Theme" height="400" />
